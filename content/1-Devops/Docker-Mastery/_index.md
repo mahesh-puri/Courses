@@ -42,5 +42,4 @@ your systems grow more complex.
 
 ---
 
-[← Back to DevOps Track](../../1-Devops/)  
-[← Back to Courses Home](../../)
+[← Back to Courses Home](../)
