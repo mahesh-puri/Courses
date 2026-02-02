@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+      <title>Mahesh Puri</title>
+      <link>https://mahesh-puri.github.io/full-stack-dev/courses</link>
+      <description>Last 10 notes on Mahesh Puri</description>
+      <generator>Quartz -- quartz.jzhao.xyz</generator>
+      <item>
+    <title>Courses</title>
+    <link>https://mahesh-puri.github.io/full-stack-dev/courses/</link>
+    <guid>https://mahesh-puri.github.io/full-stack-dev/courses/</guid>
+    <description><![CDATA[ Structured, hands-on courses across Frontend, Backend, DevOps, and AI — built from real-world engineering experience. ]]></description>
+    <pubDate>Mon, 02 Feb 2026 18:18:41 GMT</pubDate>
+  </item><item>
+    <title>Kubernetes Mastery</title>
+    <link>https://mahesh-puri.github.io/full-stack-dev/courses/1-Devops/Kubernetes-Mastery/</link>
+    <guid>https://mahesh-puri.github.io/full-stack-dev/courses/1-Devops/Kubernetes-Mastery/</guid>
+    <description><![CDATA[ Operating containerized applications at scale. ]]></description>
+    <pubDate>Mon, 02 Feb 2026 17:40:53 GMT</pubDate>
+  </item><item>
+    <title>Linux Mastery</title>
+    <link>https://mahesh-puri.github.io/full-stack-dev/courses/1-Devops/Linux-Mastery/</link>
+    <guid>https://mahesh-puri.github.io/full-stack-dev/courses/1-Devops/Linux-Mastery/</guid>
+    <description><![CDATA[ Foundations for working confidently on Linux systems. ]]></description>
+    <pubDate>Mon, 02 Feb 2026 17:40:44 GMT</pubDate>
+  </item><item>
+    <title>Docker Mastery</title>
+    <link>https://mahesh-puri.github.io/full-stack-dev/courses/1-Devops/Docker-Mastery/</link>
+    <guid>https://mahesh-puri.github.io/full-stack-dev/courses/1-Devops/Docker-Mastery/</guid>
+    <description><![CDATA[ A structured, engineer-level course on Docker for developers and DevOps professionals. ]]></description>
+    <pubDate>Mon, 02 Feb 2026 17:40:10 GMT</pubDate>
+  </item><item>
+    <title>DevOps &amp; Cloud</title>
+    <link>https://mahesh-puri.github.io/full-stack-dev/courses/1-Devops/</link>
+    <guid>https://mahesh-puri.github.io/full-stack-dev/courses/1-Devops/</guid>
+    <description><![CDATA[ Running software in production with confidence. ]]></description>
+    <pubDate>Mon, 02 Feb 2026 17:34:20 GMT</pubDate>
+  </item><item>
+    <title>0. Course Overview and Index</title>
+    <link>https://mahesh-puri.github.io/full-stack-dev/courses/1-Devops/Docker-Mastery/0-course-overview</link>
+    <guid>https://mahesh-puri.github.io/full-stack-dev/courses/1-Devops/Docker-Mastery/0-course-overview</guid>
+    <description><![CDATA[ This course builds a practical mental model of Docker from first principles and then connects it to real-world DevOps workflows. ]]></description>
+    <pubDate>Mon, 02 Feb 2026 17:25:04 GMT</pubDate>
+  </item><item>
+    <title>AI &amp; Machine Learning</title>
+    <link>https://mahesh-puri.github.io/full-stack-dev/courses/4-AI-ML/</link>
+    <guid>https://mahesh-puri.github.io/full-stack-dev/courses/4-AI-ML/</guid>
+    <description><![CDATA[ Understanding AI systems from fundamentals to modern applications. ]]></description>
+    <pubDate>Mon, 02 Feb 2026 16:30:37 GMT</pubDate>
+  </item><item>
+    <title>Backend Engineering</title>
+    <link>https://mahesh-puri.github.io/full-stack-dev/courses/2-Backend/</link>
+    <guid>https://mahesh-puri.github.io/full-stack-dev/courses/2-Backend/</guid>
+    <description><![CDATA[ Designing reliable, scalable backend systems and APIs. ]]></description>
+    <pubDate>Mon, 02 Feb 2026 16:22:30 GMT</pubDate>
+  </item><item>
+    <title>Frontend Engineering</title>
+    <link>https://mahesh-puri.github.io/full-stack-dev/courses/3-Frontend/</link>
+    <guid>https://mahesh-puri.github.io/full-stack-dev/courses/3-Frontend/</guid>
+    <description><![CDATA[ Modern frontend development with strong fundamentals and scalable patterns. ]]></description>
+    <pubDate>Mon, 02 Feb 2026 16:22:06 GMT</pubDate>
+  </item><item>
+    <title>7. Docker Security Essentials</title>
+    <link>https://mahesh-puri.github.io/full-stack-dev/courses/1-Devops/Docker-Mastery/7-docker-security-essentials</link>
+    <guid>https://mahesh-puri.github.io/full-stack-dev/courses/1-Devops/Docker-Mastery/7-docker-security-essentials</guid>
+    <description><![CDATA[ Containers make deployment easier, but they don’t magically make things safe. A container is just a process on a shared kernel with some isolation. ]]></description>
+    <pubDate>Sun, 01 Feb 2026 14:20:18 GMT</pubDate>
+  </item>
+    </channel>
+  </rss>
