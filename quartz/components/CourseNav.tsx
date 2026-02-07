@@ -5,7 +5,7 @@ export default (() => {
     return (
       <div class="course-nav">
         <h3>🔗 Links</h3>
-        <a href="https://mahesh-puri.github.io/resume/" data-no-router>
+        <a href="https://mahesh-puri.github.io/resume/" target="_blank" rel="noopener noreferrer">
           ← Back to Resume / Portfolio
         </a>
       </div>
