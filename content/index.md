@@ -1,5 +1,5 @@
 ---
-title: "Full-Stack-Dev Courses"
+title: " MAHESH PURI | COURSES"
 description: "Structured, hands-on courses across Frontend, Backend, DevOps, and AI — built from real-world engineering experience."
 ---
 
