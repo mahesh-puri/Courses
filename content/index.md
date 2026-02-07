@@ -7,7 +7,7 @@ description: "Structured, hands-on courses across Frontend, Backend, DevOps, and
 
 ## 🔗 Links
 
-👉 **[← Back to Resume / Portfolio](https://mahesh-puri.github.io/full-stack-dev/)**
+👉 **[← Back to Resume / Portfolio](https://mahesh-puri.github.io/resume/)**
 
 ---
 
