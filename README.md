@@ -7,6 +7,13 @@ This repository contains my **engineering knowledge hub** built with Quartz.
 
 ---
 
+# 🔗 Related Repositories
+
+Portfolio & Resume site:
+[https://mahesh-puri.github.io/resume/](https://mahesh-puri.github.io/resume/)
+
+---
+
 # 👨‍🏫 About This Site
 
 This site is my structured learning space where I publish **deep-dive courses and engineering notes** across:
@@ -94,13 +101,6 @@ This site is built using:
 * Markdown content
 * Custom Quartz components & styling
 * GitHub Pages for hosting
-
----
-
-# 🔗 Related Repositories
-
-Portfolio & Resume site:
-[https://mahesh-puri.github.io/resume/](https://mahesh-puri.github.io/resume/)
 
 ---
 
