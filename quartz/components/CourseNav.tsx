@@ -1,11 +1,7 @@
-import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
+import { QuartzComponent, QuartzComponentConstructor } from "./types"
 
 export default (() => {
-  const CourseNav: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
-    const links = fileData?.links ?? []
-    const prev = links[0]
-    const next = links[1]
-
+  const CourseNav: QuartzComponent = () => {
     return (
       <div class="course-nav">
         <h3>🔗 Links</h3>
