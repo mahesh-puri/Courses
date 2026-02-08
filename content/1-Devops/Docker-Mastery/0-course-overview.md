@@ -197,6 +197,18 @@ independently.
 
 ---
 
-[← Back to Docker Mastery](../../1-Devops/Docker-Mastery/)  
-[← Back to DevOps Track](../../1-Devops/)  
-[← Back to Courses Home](../../)
+<div style="display:flex; gap:12px; flex-wrap:wrap; margin-top:40px;">
+
+  <a href="../../1-Devops/Docker-Mastery/" class="back-link">
+    ← Back to Docker Mastery
+  </a>
+
+  <a href="../../1-Devops/" class="back-link">
+    ← Back to DevOps Track
+  </a>
+
+  <a href="../../" class="course-card-link">
+    ← Back to Courses Home
+  </a>
+
+</div>

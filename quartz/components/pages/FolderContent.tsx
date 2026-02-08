@@ -39,35 +39,33 @@ export default ((opts?: Partial<FolderContentOptions>) => {
     const allPagesInFolder: QuartzPluginData[] =
       folder.children
         .map((node) => {
-          // regular file, proceed
+          // regular file
           if (node.data) {
             return node.data
           }
 
+          // synthetic folder pages
           if (node.isFolder && options.showSubfolders) {
-            // folders that dont have data need synthetic files
             const getMostRecentDates = (): QuartzPluginData["dates"] => {
               let maybeDates: QuartzPluginData["dates"] | undefined = undefined
               for (const child of node.children) {
                 if (child.data?.dates) {
-                  // compare all dates and assign to maybeDates if its more recent or its not set
                   if (!maybeDates) {
                     maybeDates = { ...child.data.dates }
                   } else {
                     if (child.data.dates.created > maybeDates.created) {
                       maybeDates.created = child.data.dates.created
                     }
-
                     if (child.data.dates.modified > maybeDates.modified) {
                       maybeDates.modified = child.data.dates.modified
                     }
-
                     if (child.data.dates.published > maybeDates.published) {
                       maybeDates.published = child.data.dates.published
                     }
                   }
                 }
               }
+
               return (
                 maybeDates ?? {
                   created: new Date(),
@@ -88,8 +86,10 @@ export default ((opts?: Partial<FolderContentOptions>) => {
           }
         })
         .filter((page) => page !== undefined) ?? []
+
     const cssClasses: string[] = fileData.frontmatter?.cssclasses ?? []
     const classes = cssClasses.join(" ")
+
     const listProps = {
       ...props,
       sort: options.sort,
@@ -102,21 +102,29 @@ export default ((opts?: Partial<FolderContentOptions>) => {
         : htmlToJsx(fileData.filePath!, tree)
     ) as ComponentChildren
 
+    // 🔥 KEY FIX:
+    // If folder has an index.md (content exists), do NOT show auto file listing
+    const hasIndexContent = (tree as Root).children.length > 0
+
     return (
       <div class="popover-hint">
         <article class={classes}>{content}</article>
-        <div class="page-listing">
-          {options.showFolderCount && (
-            <p>
-              {i18n(cfg.locale).pages.folderContent.itemsUnderFolder({
-                count: allPagesInFolder.length,
-              })}
-            </p>
-          )}
-          <div>
-            <PageList {...listProps} />
+
+        {/* Only show auto listing if NO index.md exists */}
+        {!hasIndexContent && (
+          <div class="page-listing">
+            {options.showFolderCount && (
+              <p>
+                {i18n(cfg.locale).pages.folderContent.itemsUnderFolder({
+                  count: allPagesInFolder.length,
+                })}
+              </p>
+            )}
+            <div>
+              <PageList {...listProps} />
+            </div>
           </div>
-        </div>
+        )}
       </div>
     )
   }

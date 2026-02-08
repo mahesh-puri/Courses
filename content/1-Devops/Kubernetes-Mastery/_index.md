@@ -3,8 +3,6 @@ title: "Kubernetes Mastery"
 description: "Operating containerized applications at scale."
 ---
 
-# ☸️ Kubernetes Mastery
-
 Kubernetes is **not just YAML** — it is a distributed systems platform for
 running containerized workloads reliably at scale.
 
@@ -94,4 +92,7 @@ By the end of this course, you will be able to:
 
 ---
 
-[← Back to Courses Home](../)
+<a href="../" class="course-card-link">
+  ← Back to Courses Home
+</a>
+

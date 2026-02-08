@@ -33,4 +33,7 @@ Focus areas:
 
 ---
 
-[← Back to Courses Home](../)
+<a href="../" class="course-card-link">
+  ← Back to Courses Home
+</a>
+

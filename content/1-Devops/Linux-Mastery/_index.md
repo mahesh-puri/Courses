@@ -1,90 +1,122 @@
 ---
 title: "Linux Mastery"
-description: "Foundations for working confidently on Linux systems."
+description: "Deep Linux knowledge for senior developers and DevOps engineers."
 ---
 
-# 🐧 Linux Mastery
+## 🐧 Linux mastery comes from **practice and repetition**.
 
-Linux is the **foundation of modern DevOps, cloud platforms, and containers**.
-If you run software in production, Linux is always part of the picture — whether
-you see it directly or not.
+Linux runs the internet. Every container, Kubernetes node, CI/CD runner, database server, and cloud VM ultimately relies on the Linux kernel. Even if you work on Windows or macOS, your production software almost certainly runs on Linux.
 
-This course is designed to build **practical Linux fluency** for developers and
-DevOps engineers, focusing on how Linux behaves in real systems rather than
-memorizing commands in isolation.
+This course builds **deep, practical Linux fluency** for experienced developers and DevOps engineers.
 
 ---
 
-## 🎯 Course Goals
+## 🎯 Course Outcomes
 
-By the end of this course, you will be able to:
+By the end of this course you will be able to:
 
-- Navigate Linux systems confidently
-- Understand how processes, files, and permissions really work
-- Debug common system-level issues
-- Reason about Linux behavior inside containers and cloud VMs
-
----
-
-## 📘 Modules _(Planned)_
-
-### 1️⃣ Linux Fundamentals
-
-- Filesystem layout (`/`, `/etc`, `/var`, `/home`, `/proc`)
-- Essential commands (`cd`, `ls`, `cp`, `mv`, `rm`, `cat`, `less`)
-- Working with files and directories safely
+- Confidently operate and troubleshoot Linux servers
+- Understand how Linux behaves inside containers and cloud VMs
+- Debug system-level issues using logs, processes, and networking tools
+- Manage users, permissions, storage, and services
+- Read and reason about Linux behavior like an SRE
 
 ---
 
-### 2️⃣ Text Processing & CLI Power Tools
+## 🗺️ Course Modules
 
-- `grep`, `awk`, `sed`
-- Pipes and redirection
-- `tee`, `xargs`, command substitution
-- Reading logs efficiently
+The course is organized as **daily deep-dive modules**.
+Each module will live as its own note:
+
+<div style="display:flex; flex-direction:column; gap:10px; margin-top:20px;">
+
+<a href="./0-linux-intro/" class="course-card-link">
+  <span class="icon-hand">🐧</span>
+  <span class="icon-laptop">🚀</span>
+  0. Linux Intro & Mental Models
+</a>
+
+<a href="./1-internet-and-servers/" class="course-card-link">
+  <span class="icon-hand">🐧</span>
+  <span class="icon-laptop">🚀</span>
+  1. How the Internet Works & What Are Servers
+</a>
+
+<a href="./2-linux-os-boot-and-services/" class="course-card-link">
+  <span class="icon-hand">🐧</span>
+  <span class="icon-laptop">🚀</span>
+  2. Linux OS, Boot Process & Services
+</a>
+
+<a href="./3-linux-basic-commands/" class="course-card-link">
+  <span class="icon-hand">🐧</span>
+  <span class="icon-laptop">🚀</span>
+  3. Linux Basic Commands for DevOps Engineers
+</a>
+
+<a href="./4-advanced-linux-commands/" class="course-card-link">
+  <span class="icon-hand">🐧</span>
+  <span class="icon-laptop">🚀</span>
+  4. Advanced Linux Commands
+</a>
+
+<a href="./5-users-and-groups/" class="course-card-link">
+  <span class="icon-hand">🐧</span>
+  <span class="icon-laptop">🚀</span>
+  5. Users & Groups Management in Linux
+</a>
+
+<a href="./6-file-management/" class="course-card-link">
+  <span class="icon-hand">🐧</span>
+  <span class="icon-laptop">🚀</span>
+  6. File Management in Linux
+</a>
+
+<a href="./7-file-transfer/" class="course-card-link">
+  <span class="icon-hand">🐧</span>
+  <span class="icon-laptop">🚀</span>
+  7. File Transfer Commands
+</a>
+
+<a href="./8-linux-networking/" class="course-card-link">
+  <span class="icon-hand">🐧</span>
+  <span class="icon-laptop">🚀</span>
+  8. Linux Networking Commands
+</a>
+
+<a href="./9-pro-cli-tools/" class="course-card-link">
+  <span class="icon-hand">🐧</span>
+  <span class="icon-laptop">🚀</span>
+  9. Pro CLI Tools: AWK, GREP, FIND, SED
+</a>
+
+<a href="./10-linux-volume-management/" class="course-card-link">
+  <span class="icon-hand">🐧</span>
+  <span class="icon-laptop">🚀</span>
+  10. Linux Volume Management
+</a>
+
+<a href="./11-lvm/" class="course-card-link">
+  <span class="icon-hand">🐧</span>
+  <span class="icon-laptop">🚀</span>
+  11. LVM (Logical Volume Manager)
+</a>
+
+</div>
+
+(Additional advanced modules may be added over time.)
 
 ---
 
-### 3️⃣ Process & Resource Management
+## 🧭 How To Use This Course
 
-- Processes vs threads
-- `ps`, `top`, `htop`
-- Signals and `kill`
-- CPU and memory usage basics
-
----
-
-### 4️⃣ Users, Groups & Permissions
-
-- Users and groups
-- File permissions and ownership
-- `chmod`, `chown`, `umask`
-- Running services securely
+1. Set up Linux using the WSL/VM guide.
+2. Follow modules in order.
+3. Run every lab and command yourself.
+4. Treat this as **hands-on system training**.
 
 ---
 
-### 5️⃣ Networking Basics
-
-- IP addresses, ports, and interfaces
-- `ss`, `netstat`, `ping`, `curl`
-- DNS resolution basics
-- Debugging connectivity issues
-
----
-
-### 6️⃣ Linux for Containers & Cloud
-
-- Linux namespaces and cgroups (conceptual)
-- Filesystems and mounts
-- What Docker and Kubernetes rely on from Linux
-
----
-
-## 🧭 Navigation
-
-- 🚧 This course is **coming soon**
-- 👉 Start with **Docker Mastery** to see Linux concepts in action
-
----
-
-[← Back to Courses Home](../)
+<a href="../" class="course-card-link">
+  ← Back to Courses Home
+</a>

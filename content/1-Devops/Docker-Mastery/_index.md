@@ -11,18 +11,81 @@ Docker.
 
 ## 📚 Course Modules
 
-0. [Course Overview & Index](./0-course-overview/)
-1. [Docker Images – Layers & Caching](./1-docker-images/)
-2. [Docker Containers – Linux Processes](./2-docker-containers/)
-3. [Docker Networking](./3-docker-networking/)
-4. [Docker Volumes](./4-docker-volumes/)
-5. [Dockerfile Mastery](./5-dockerfile-mastery/)
-6. [Multi-Stage Docker Builds](./6-multi-stage-docker-builds/)
-7. [Docker Security Essentials](./7-docker-security-essentials/)
-8. [Docker Registries & Tagging](./8-docker-registries-and-tagging/)
-9. [Docker Compose](./9-docker-compose/)
-10. [Debugging Docker](./10-debugging-docker/)
-11. [From Docker to Orchestrators](./11-from-docker-to-orchestrators/)
+<div style="display:flex; flex-direction:column; gap:10px; margin-top:20px;">
+
+<a href="./0-course-overview/" class="course-card-link">
+  <span class="icon-hand">🐳</span>
+  <span class="icon-laptop">🚀</span>
+  0. Course Overview & Index
+</a>
+
+<a href="./1-docker-images/" class="course-card-link">
+  <span class="icon-hand">🐳</span>
+  <span class="icon-laptop">🚀</span>
+  1. Docker Images – Layers & Caching
+</a>
+
+<a href="./2-docker-containers/" class="course-card-link">
+  <span class="icon-hand">🐳</span>
+  <span class="icon-laptop">🚀</span>
+  2. Docker Containers – Linux Processes
+</a>
+
+<a href="./3-docker-networking/" class="course-card-link">
+  <span class="icon-hand">🐳</span>
+  <span class="icon-laptop">🚀</span>
+  3. Docker Networking
+</a>
+
+<a href="./4-docker-volumes/" class="course-card-link">
+  <span class="icon-hand">🐳</span>
+  <span class="icon-laptop">🚀</span>
+  4. Docker Volumes
+</a>
+
+<a href="./5-dockerfile-mastery/" class="course-card-link">
+  <span class="icon-hand">🐳</span>
+  <span class="icon-laptop">🚀</span>
+  5. Dockerfile Mastery
+</a>
+
+<a href="./6-multi-stage-docker-builds/" class="course-card-link">
+  <span class="icon-hand">🐳</span>
+  <span class="icon-laptop">🚀</span>
+  6. Multi-Stage Docker Builds
+</a>
+
+<a href="./7-docker-security-essentials/" class="course-card-link">
+  <span class="icon-hand">🐳</span>
+  <span class="icon-laptop">🚀</span>
+  7. Docker Security Essentials
+</a>
+
+<a href="./8-docker-registries-and-tagging/" class="course-card-link">
+  <span class="icon-hand">🐳</span>
+  <span class="icon-laptop">🚀</span>
+  8. Docker Registries & Tagging
+</a>
+
+<a href="./9-docker-compose/" class="course-card-link">
+  <span class="icon-hand">🐳</span>
+  <span class="icon-laptop">🚀</span>
+  9. Docker Compose
+</a>
+
+<a href="./10-debugging-docker/" class="course-card-link">
+  <span class="icon-hand">🐳</span>
+  <span class="icon-laptop">🚀</span>
+  10. Debugging Docker
+</a>
+
+<a href="./11-from-docker-to-orchestrators/" class="course-card-link">
+  <span class="icon-hand">🐳</span>
+  <span class="icon-laptop">🚀</span>
+  11. From Docker to Orchestrators
+</a>
+
+</div>
 
 ---
 
@@ -42,6 +105,8 @@ your systems grow more complex.
 
 ---
 
-[← Back to Courses Home](../)
+<a href="../" class="course-card-link">
+  ← Back to Courses Home
+</a>
 
 ---
