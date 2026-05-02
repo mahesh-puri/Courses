@@ -118,7 +118,34 @@ Example:
 cat logs.txt | grep ERROR | sort | uniq -c
 ```
 
-Unix skills ≈ Linux skills.
+| Part           | What it does                                     |
+| -------------- | ------------------------------------------------ |
+| `cat logs.txt` | Prints the contents of the log file              |
+| `grep ERROR`   | Filters only lines containing the word **ERROR** |
+| `sort`         | Sorts the matching lines alphabetically          |
+| `uniq -c`      | Counts how many times each unique line appears   |
+
+This is extremely useful for:
+
+Debugging production issues
+
+Analyzing logs
+
+Finding the most frequent failures
+
+We will learn each of these tools in depth in upcoming modules:
+
+- `grep`
+
+- `sort`
+
+- `uniq`
+
+- Pipes (`|`)
+
+- Log analysis techniques
+
+## Soon you’ll be able to build powerful command pipelines like this confidently 🚀
 
 ---
 
@@ -225,7 +252,7 @@ Everything is exposed as files:
 
 ---
 
-## Practice — Peek at Architecture
+## 🔎 Practice — Peek at Architecture
 
 ```bash
 ps 1 -o pid,comm,args
@@ -233,6 +260,209 @@ ls /dev
 ls /proc
 ls /sys
 ```
+
+---
+
+## 🧠 Understanding this gives you deep visibility into how Linux works internally.
+
+| Command                    | Layer explored        | Purpose                                         |
+| -------------------------- | --------------------- | ----------------------------------------------- |
+| `ps -p 1 -o pid,comm,args` | Init / system startup | Inspect the first process started by the kernel |
+| `ls /dev`                  | Devices               | See how hardware is exposed as files            |
+| `ls /proc`                 | Kernel runtime        | View live system & process data                 |
+| `ls /sys`                  | Kernel + hardware     | View and tune hardware settings                 |
+
+---
+
+# 1️⃣ Inspect the Init System (PID 1)
+
+```bash
+ps -p 1 -o pid,comm,args
+```
+
+Example output:
+
+```
+PID COMMAND  CMD
+1   systemd  /sbin/init
+```
+
+Key idea:
+
+- **PID 1** is the first process started by the kernel.
+- On modern Linux → this is **systemd**.
+- Every process on the system ultimately becomes a child of PID 1.
+
+Why this matters:
+
+- If PID 1 crashes → the system shuts down.
+- Debugging services often starts from systemd.
+
+---
+
+# 2️⃣ `/dev` — Device Files (Hardware as Files)
+
+```bash
+ls /dev
+```
+
+Linux exposes hardware as **device files**.
+
+Instead of special APIs, programs read/write devices like files.
+
+### Common examples
+
+| Device         | Purpose                              |
+| -------------- | ------------------------------------ |
+| `/dev/sda`     | First disk drive                     |
+| `/dev/tty`     | Terminal devices                     |
+| `/dev/null`    | Discards all data written to it      |
+| `/dev/random`  | Cryptographically secure random data |
+| `/dev/urandom` | Faster pseudo-random generator       |
+| `/dev/zero`    | Infinite stream of zeros             |
+
+### Real examples
+
+Discard output:
+
+```bash
+echo "hello" > /dev/null
+```
+
+Generate random data:
+
+```bash
+head -c 16 /dev/random | xxd
+```
+
+Create empty file quickly:
+
+```bash
+dd if=/dev/zero of=file.img bs=1M count=100
+```
+
+Mental model:
+
+```
+/dev = hardware interface exposed as files
+```
+
+This design enables powerful scripting and automation.
+
+---
+
+# 3️⃣ `/proc` — Live Kernel & Process Data
+
+```bash
+ls /proc
+```
+
+`/proc` is a **virtual filesystem** generated in real time by the kernel.
+
+Many entries are numbers → these are **process IDs**.
+
+Each process has its own directory:
+
+```
+/proc/<PID>
+```
+
+Example:
+
+```bash
+ls /proc/1
+```
+
+---
+
+## Useful `/proc` files
+
+| File             | Purpose          |
+| ---------------- | ---------------- |
+| `/proc/cpuinfo`  | CPU details      |
+| `/proc/meminfo`  | Memory usage     |
+| `/proc/uptime`   | System uptime    |
+| `/proc/loadavg`  | System load      |
+| `/proc/1/status` | Details of PID 1 |
+
+Examples:
+
+```bash
+cat /proc/cpuinfo
+cat /proc/meminfo
+cat /proc/uptime
+```
+
+Mental model:
+
+```
+/proc = real-time view into the running kernel
+```
+
+Tools like `top`, `htop`, and `free` read data from `/proc`.
+
+---
+
+# 4️⃣ `/sys` — Kernel & Hardware Control Interface
+
+```bash
+ls /sys
+```
+
+`/sys` (sysfs) exposes **hardware devices and kernel settings** in a structured way.
+
+It is heavily used for:
+
+- Kernel tuning
+- Device configuration
+- Power management
+
+---
+
+## Example directories
+
+| Path           | Purpose                               |
+| -------------- | ------------------------------------- |
+| `/sys/class`   | Device classes (network, block, etc.) |
+| `/sys/block`   | Disk devices                          |
+| `/sys/devices` | Hardware tree                         |
+| `/sys/kernel`  | Kernel settings                       |
+
+Example:
+
+```bash
+ls /sys/class/net
+```
+
+Shows network interfaces.
+
+Check CPU scaling:
+
+```bash
+ls /sys/devices/system/cpu
+```
+
+Mental model:
+
+```
+/sys = kernel control panel
+```
+
+---
+
+# 🧠 Big Picture Summary
+
+These directories demonstrate the Linux philosophy:
+
+```
+Everything is a file.
+```
+
+| Directory | Represents                 |
+| --------- | -------------------------- |
+| `/dev`    | Hardware devices           |
+| `/proc`   | Running kernel & processes |
+| `/sys`    | Hardware + kernel tuning   |
 
 ---
 

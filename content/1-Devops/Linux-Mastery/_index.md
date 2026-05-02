@@ -96,12 +96,6 @@ Each module will live as its own note:
   10. Linux Volume Management
 </a>
 
-<a href="./11-lvm/" class="course-card-link">
-  <span class="icon-hand">🐧</span>
-  <span class="icon-laptop">🚀</span>
-  11. LVM (Logical Volume Manager)
-</a>
-
 </div>
 
 (Additional advanced modules may be added over time.)
